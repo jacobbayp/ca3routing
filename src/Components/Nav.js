@@ -1,7 +1,8 @@
-import './App.css';
+import '../App.css';
 import React from 'react';
 import { Link } from 'react-router-dom'
-import facade from "./apiFacade";
+import facade from "../apiFacade";
+import App from "../App"
 
 function Nav() {
 
@@ -19,7 +20,7 @@ function Nav() {
 
            <ul className="links">
                 <Link style={navStyle} to="/logout">
-                    <li>logout</li>
+                   <li>Logout</li>
                 </Link>
 
                 <Link style={navStyle} to='/about'>
@@ -36,7 +37,7 @@ function Nav() {
                 </Link>
 
                 <Link style={navStyle} to='/endpoint3'>
-                    <li>Endpoint 3</li>
+                    <li>List of StarWars characters</li>
                 </Link>
 
 
